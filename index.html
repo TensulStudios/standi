@@ -11,6 +11,7 @@
             color: #ffffff;
             margin: 0;
             padding: 0;
+            background-color: #02172e;
         }
 
         .topbar {
@@ -36,6 +37,7 @@
             position: absolute;
             top: 50%;
             left: 50%;
+            background-color: #02102e;
             transform: translate(-50%, -50%);
             border: black 3px solid;
             border-radius: 15px;
@@ -66,7 +68,7 @@
         input {
             width: 100%;
             padding: 10px;
-            padding-top: 30px; /* Space for label */
+            padding-top: 30px;
             border-radius: 4px;
             border: 1px solid #ccc;
             background-color: #3b3b3b;
@@ -147,6 +149,7 @@
             .then((result) => {
                 const user = result.user;
                 console.log('User signed in:', user);
+                window.open('/games/')
             })
             .catch((error) => {
                 console.error('Error during sign-in:', error.message);
